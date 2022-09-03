@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AndroCalcul</string>
+    <string name="operation">OPERATION</string>
+    <string name="fonction">FONCTION</string>
+    <string name="equation">EQUATION</string>
+    <string name="plus">+</string>
+    <string name="divise">/</string>
+    <string name="multiple">x</string>
+    <string name="moins">-</string>
+    <string name="equations">Equations</string>
+    <string name="racine">RACINE</string>
+    <string name="_2">^2</string>
+    <string name="_3">^3</string>
+    <string name="fonctions">Fonction</string>
+    <string name="log">LOG</string>
+    <string name="log10">LOG10</string>
+    <string name="exp">exp</string>
+    <string name="valeur_de_a">Valeur de A</string>
+    <string name="valider">VALIDER</string>
+    <string name="valeur_de_b">Valeur de B</string>
+</resources>
