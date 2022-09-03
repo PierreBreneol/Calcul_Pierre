@@ -10,8 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Equations"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:gravity="center"
+        android:layout_margin="20dp"
+        android:paddingBottom="20dp"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button

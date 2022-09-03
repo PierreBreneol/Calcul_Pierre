@@ -9,7 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fonctions"
-        android:textSize="24sp"
+        android:layout_margin="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="32sp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"/>
 

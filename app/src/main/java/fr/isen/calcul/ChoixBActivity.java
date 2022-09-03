@@ -17,14 +17,13 @@ public class ChoixBActivity extends AppCompatActivity {
     private EditText mNumeroB;
     private Button mButtonValidation;
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choixb);
 
-        mNumeroB = findViewById(R.id.button1);
-        mButtonValidation = findViewById(R.id.editText1);
+        mNumeroB = findViewById(R.id.editText1_choix_b);
+        mButtonValidation = findViewById(R.id.button1_choix_b);
         mButtonValidation.setEnabled(false);
         mNumeroB.addTextChangedListener(new TextWatcher() {
             @Override

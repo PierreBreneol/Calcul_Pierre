@@ -49,22 +49,22 @@ public class OperationActivity extends AppCompatActivity {
     }
 
     public void additionClick (View view){
-        Intent fonctionActivity = new Intent(OperationActivity.this, ChoixBActivity.class);
+        Intent fonctionActivity = new Intent(OperationActivity.this, fr.isen.calcul.ChoixBActivity.class);
         startActivityForResult(fonctionActivity, PLUS_REQUEST_CODE);
     }
 
     public void soustractionClick (View view){
-        Intent fonctionActivity = new Intent(OperationActivity.this, ChoixBActivity.class);
+        Intent fonctionActivity = new Intent(OperationActivity.this, fr.isen.calcul.ChoixBActivity.class);
         startActivityForResult(fonctionActivity, MOINS_REQUEST_CODE);
     }
 
     public void multiplicationClick (View view){
-        Intent fonctionActivity = new Intent(OperationActivity.this, ChoixBActivity.class);
+        Intent fonctionActivity = new Intent(OperationActivity.this, fr.isen.calcul.ChoixBActivity.class);
         startActivityForResult(fonctionActivity, MULTIPLE_REQUEST_CODE);
     }
 
     public void divisionClick (View view){
-        Intent fonctionActivity = new Intent(OperationActivity.this, ChoixBActivity.class);
+        Intent fonctionActivity = new Intent(OperationActivity.this, fr.isen.calcul.ChoixBActivity.class);
         startActivityForResult(fonctionActivity, DIVISE_REQUEST_CODE);
     }
 
