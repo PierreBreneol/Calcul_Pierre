@@ -24,42 +24,54 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="additionClick"
-        android:text="+"
-        android:textSize="40dp"
+        android:text="@string/plus"
+        android:textSize="40sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         app:constraint_referenced_ids="guideline1"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="soustractionClick"
-        android:text="-"
-        android:textSize="40dp"
+        android:text="@string/moins"
+        android:textSize="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         app:constraint_referenced_ids="guideline1"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
-        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="multiplicationClick"
-        android:text="x"
-        android:textSize="40dp"
+        android:text="@string/multiplication"
+        android:textSize="40sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         app:constraint_referenced_ids="guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="divisionClick"
-        android:text="/"
-        android:textSize="40dp"
+        android:text="@string/divise"
+        android:textSize="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:constraint_referenced_ids="guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline1"
-        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        tools:ignore="UsingOnClickInXml" />
 </androidx.constraintlayout.widget.ConstraintLayout>

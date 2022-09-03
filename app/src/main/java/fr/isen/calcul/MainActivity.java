@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mButtonEquation = findViewById(R.id.button2);
         mButtonFonction = findViewById(R.id.button3);
 
-        mButtonOperation.setEnabled(false);
+        mButtonOperation.setEnabled(false);//les boutons ne sont pas cliquables si un nombre n'est pas entré dans l'EditText
         mButtonEquation.setEnabled(false);
         mButtonFonction.setEnabled(false);
 
@@ -53,12 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                mButtonOperation.setEnabled(!editable.toString().isEmpty());
+                mButtonOperation.setEnabled(!editable.toString().isEmpty());//on active les boutons si le champ n'est pas vide
                 mButtonFonction.setEnabled(!editable.toString().isEmpty());
                 mButtonEquation.setEnabled(!editable.toString().isEmpty());
             }
         });
     }
+
+    //on redirige vers les activités correspondantes aux boutons avec le requestCode correspondant
 
     public void operationClick(View view){
         Intent operationActivity = new Intent(MainActivity.this, fr.isen.calcul.OperationActivity.class);
@@ -76,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
         fonctionActivity.putExtra(NUMERO_A, Double.parseDouble(mNumeroA.getText().toString()));
         startActivityForResult(fonctionActivity, FONCTION_ACTIVITY_REQUEST_CODE);
     }
+
+    //affichage du résultat selon l'activité ayant été utilisée
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -105,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                             mNumeroA.setText(String.valueOf(pow3));
                             break;
                         default:
-                            System.out.println("error case type equation");
+                            System.out.println("erreur equation");
                     }
                     break;
 
@@ -116,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 default:
-                    System.out.println("error request");
+                    System.out.println("erreur fonction");
             }
         } else System.out.println("error");
     }

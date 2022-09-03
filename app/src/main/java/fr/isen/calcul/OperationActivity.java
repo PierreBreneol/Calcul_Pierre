@@ -48,6 +48,7 @@ public class OperationActivity extends AppCompatActivity {
         }
     }
 
+    //On lance ChoixBActivity avec le requestCode correspondant au bouton sur lequel on a cliqué
     public void additionClick (View view){
         Intent fonctionActivity = new Intent(OperationActivity.this, fr.isen.calcul.ChoixBActivity.class);
         startActivityForResult(fonctionActivity, PLUS_REQUEST_CODE);
@@ -68,6 +69,7 @@ public class OperationActivity extends AppCompatActivity {
         startActivityForResult(fonctionActivity, DIVISE_REQUEST_CODE);
     }
 
+    //on réalise le calcul souhaité puis on appelle la méthode "render" qui renvoit ce résultat à l'activité 1
     private void addition(double numberA, double numberB){
         double result = numberA + numberB;
         render(result);
@@ -89,10 +91,10 @@ public class OperationActivity extends AppCompatActivity {
     }
 
     public void render(double value){
-        Intent intent = new Intent();
-        intent.putExtra(RESULT_CALCUL, value);
-        setResult(RESULT_OK, intent);
-        finish();
+        Intent intent = new Intent(); //on créé un nouvel intent
+        intent.putExtra(RESULT_CALCUL, value); //on met le résultat dans l'intent
+        setResult(RESULT_OK, intent); //on initialise
+        finish(); //on envoie le résultat à MainActivity
     }
 
 

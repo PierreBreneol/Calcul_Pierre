@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,22 +9,24 @@
         android:id="@+id/editText1_choix_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Valeur de B"
+        android:hint="@string/valeur_de_b"
         android:textSize="24sp"
         android:inputType="numberDecimal"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="0" />
 
     <Button
         android:id="@+id/button1_choix_b"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:onClick="validationClick"
-        android:text="Valider"
+        android:text="@string/valider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1_choix_b"/>
+        app:layout_constraintTop_toBottomOf="@+id/editText1_choix_b"
+        tools:ignore="UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
